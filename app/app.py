@@ -4,7 +4,9 @@ import pickle
 import os
 import pandas as pd
 
+
 app = Flask(__name__)
+application = app
 
 # Paths to the model and scaler
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
