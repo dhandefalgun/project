@@ -3,3 +3,4 @@ pandas
 scikit-learn
 pickle-mixin
 streamlit==1.23.1
+gunicorn
