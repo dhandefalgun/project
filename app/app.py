@@ -6,7 +6,7 @@ import pandas as pd
 
 
 app = Flask(__name__)
-application = app
+gunicorn = app
 
 # Paths to the model and scaler
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -78,9 +78,7 @@ def predict():
         # Returning an error message if something goes wrong
         return jsonify({'error': str(e)}), 500
 
-# Running the Flask app
-if __name__ == '__main__':
-    app.run(debug=True)
+
 
 
 
